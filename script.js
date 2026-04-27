@@ -91,7 +91,7 @@ const files = {
     name: "about.md",
     language: "Markdown",
     lines: [
-      { type: "comment", text: "<!-- manuel-oshana / full-stack-software-engineer -->" },
+      { type: "comment", text: "<!-- manuel-oshana / full stack software engineer -->" },
       { type: "heading", text: "# Manuel Oshana" },
       { type: "body", text: resumeData.summary },
       { type: "space" },
@@ -164,7 +164,7 @@ const files = {
     language: "HTTP",
     lines: [
       { type: "comment", text: "### Contact Manuel" },
-      { type: "keyword", text: "POST https://manuel-oshana.dev/contact" },
+      { type: "keyword", text: "POST https://manueloshana.github.io" },
       { type: "body", text: "Content-Type: application/json" },
       { type: "space" },
       { type: "keyword", text: "{" },
@@ -177,16 +177,15 @@ const files = {
     ]
   },
   skills: {
-    name: "skills.aws",
-    language: "AWS",
+    name: "skills.md",
+    language: "Markdown",
     lines: [
-      { type: "comment", text: "# Core skill matrix from resume_tailored_backend_aws.tex" },
       ...Object.entries(resumeData.skills).map(([group, values]) => ({ type: "skillGroup", group, values }))
     ]
   }
 };
 
-const fileOrder = ["about", "projects", "resume", "skills", "contact"];
+const fileOrder = ["about", "resume", "skills", "projects", "contact"];
 const editorContent = document.querySelector("#editorContent");
 const breadcrumb = document.querySelector("#breadcrumb");
 const tabs = document.querySelector("#tabs");
