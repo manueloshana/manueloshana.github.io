@@ -1,11 +1,11 @@
 const resumeData = {
   name: "Manuel Oshana",
-  role: "Backend and Cloud-Focused Software Engineer",
+  role: "Full Stack Software Engineer",
   location: "Toronto, ON",
   email: "manuel.oshana@gmail.com",
   linkedin: "linkedin.com/in/manueloshana",
   summary:
-    "Backend and cloud-focused software engineer with 5+ years of experience building and operating customer-facing platforms across AWS, Azure, and Kubernetes environments. Strong hands-on background in backend services, microservices, REST APIs, CI/CD automation, production reliability, and AI-assisted development workflows using tools such as Cursor and GitHub Copilot.",
+    "Full Stack Software Engineer with 5+ years of experience building and operating customer-facing platforms across AWS, Azure, and Kubernetes environments. Strong hands-on background in backend services, microservices, REST APIs, CI/CD automation, production reliability, and AI-assisted development workflows. I am passionate about AI assisted development tools such as Cursor and Claude Code, and I am an expert in agent orchestration.",
   highlights: [
     "100k+ daily users supported on Purolator's AI chatbot platform",
     "99.99% uptime focus across Kubernetes and Docker production systems",
@@ -80,7 +80,7 @@ const resumeData = {
     AWS: ["Lambda", "API Gateway", "DynamoDB", "S3", "ECS", "EKS", "RDS", "SQS", "SNS", "Step Functions", "CloudWatch", "IAM", "VPC", "EC2", "ElastiCache", "Secrets Manager", "CloudFormation", "CodePipeline", "CodeBuild", "CodeDeploy"],
     Architecture: ["Distributed systems", "Event-driven systems", "Scalable system design", "Resilient services", "API design", "Data modeling"],
     DevOps: ["Docker", "Kubernetes", "Helm", "Jenkins", "Ansible", "Git", "CI/CD", "Infrastructure as code", "Zero-downtime deployments"],
-    "AI Dev": ["Cursor", "GitHub Copilot", "AI-assisted development workflows", "Prompt-driven coding", "Multi-agent orchestration"],
+    "AI Dev": ["Cursor", "Claude Code", "GitHub Copilot", "AI-assisted development workflows", "Prompt-driven coding", "Agent orchestration"],
     "Testing & Ops": ["Jest", "Selenium", "Unit testing", "TDD", "Monitoring", "Logging", "Production support", "Incident resolution", "Root cause analysis", "Performance optimization", "Cost optimization"],
     Frontend: ["React", "Angular", "Ionic"]
   }
@@ -91,7 +91,7 @@ const files = {
     name: "about.md",
     language: "Markdown",
     lines: [
-      { type: "comment", text: "<!-- manuel-oshana / backend-cloud-engineer -->" },
+      { type: "comment", text: "<!-- manuel-oshana / full-stack-software-engineer -->" },
       { type: "heading", text: "# Manuel Oshana" },
       { type: "body", text: resumeData.summary },
       { type: "space" },
@@ -155,8 +155,7 @@ const files = {
       { type: "heading2", text: "]," },
       { type: "space" },
       { type: "education", education: resumeData.education },
-      { type: "link", text: "Open printable resume page", href: "resume.html" },
-      { type: "link", text: "Open original resume PDF", href: "assets/manuel-oshana-resume.pdf" },
+      { type: "link", text: "Open resume PDF", href: "assets/manuel-oshana-resume.pdf" },
       { type: "keyword", text: "}" }
     ]
   },
@@ -173,7 +172,7 @@ const files = {
       { type: "json", key: "linkedin", value: `https://${resumeData.linkedin}` },
       { type: "json", key: "location", value: resumeData.location },
       { type: "json", key: "resume", value: "assets/manuel-oshana-resume.pdf" },
-      { type: "body", text: '"message": "Available for backend, cloud, platform, and full-stack engineering opportunities."' },
+      { type: "body", text: '"message": "Available for full-stack, backend, cloud, platform, and AI-assisted engineering opportunities."' },
       { type: "keyword", text: "}" }
     ]
   },
