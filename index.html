@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="VS Code inspired software developer portfolio for Manuel Oshana.">
+    <title>Manuel Oshana.code-workspace</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="desktop-noise" aria-hidden="true"></div>
+
+    <main class="code-window" aria-label="Manuel Oshana portfolio in a VS Code style window">
+      <header class="window-titlebar">
+        <div class="window-left">
+          <span class="app-glyph" aria-hidden="true">M</span>
+          <span class="menu-item">File</span>
+          <span class="menu-item">Edit</span>
+          <span class="menu-item">Selection</span>
+          <span class="menu-item">View</span>
+          <span class="menu-item">Run</span>
+          <span class="menu-item">Terminal</span>
+          <span class="menu-item">Help</span>
+        </div>
+        <div class="window-title">manuel-oshana-portfolio - Visual Studio Code</div>
+        <div class="window-controls" aria-label="Window controls">
+          <button type="button" aria-label="Minimize">-</button>
+          <button type="button" aria-label="Maximize">[]</button>
+          <button class="close" type="button" aria-label="Close">x</button>
+        </div>
+      </header>
+
+      <section class="workbench">
+        <aside class="activity-bar" aria-label="Activity bar">
+          <button class="activity active" type="button" aria-label="Explorer" data-shortcut="about">EX</button>
+          <button class="activity" type="button" aria-label="Projects" data-shortcut="projects">PR</button>
+          <button class="activity" type="button" aria-label="Resume" data-shortcut="resume">CV</button>
+          <button class="activity" type="button" aria-label="Skills" data-shortcut="skills">AWS</button>
+          <button class="activity" type="button" aria-label="Contact" data-shortcut="contact">GO</button>
+        </aside>
+
+        <aside class="explorer" aria-label="Explorer">
+          <div class="explorer-head">
+            <span>Explorer</span>
+            <button type="button" aria-label="New file">+</button>
+          </div>
+
+          <div class="workspace-name">MANUEL-OSHANA</div>
+          <nav class="file-tree" aria-label="Portfolio files">
+            <button class="file active" type="button" data-file="about">
+              <span class="chev">&gt;</span>
+              <span class="file-icon md">MD</span>
+              about.md
+            </button>
+            <button class="file" type="button" data-file="projects">
+              <span class="chev">&gt;</span>
+              <span class="file-icon ts">TS</span>
+              projects.ts
+            </button>
+            <button class="file" type="button" data-file="resume">
+              <span class="chev">&gt;</span>
+              <span class="file-icon json">{}</span>
+              resume.json
+            </button>
+            <button class="file" type="button" data-file="skills">
+              <span class="chev">&gt;</span>
+              <span class="file-icon aws">AWS</span>
+              skills.aws
+            </button>
+            <button class="file" type="button" data-file="contact">
+              <span class="chev">&gt;</span>
+              <span class="file-icon http">#</span>
+              contact.http
+            </button>
+          </nav>
+
+          <div class="outline">
+            <div class="outline-title">Outline</div>
+            <a href="#editorHeading">Manuel Oshana</a>
+            <a href="#terminalPanel">Terminal</a>
+            <a href="resume.html">Printable resume</a>
+            <a href="assets/manuel-oshana-resume.pdf">Resume PDF</a>
+          </div>
+        </aside>
+
+        <section class="editor-shell">
+          <div class="tabs" id="tabs" aria-label="Open files"></div>
+
+          <div class="editor-zone">
+            <article class="editor-pane" aria-live="polite">
+              <div class="breadcrumb" id="breadcrumb">manuel-oshana / about.md</div>
+              <div class="code-document" id="editorContent"></div>
+            </article>
+
+            <aside class="minimap" aria-label="Code minimap">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+            </aside>
+          </div>
+
+          <section class="terminal" id="terminalPanel" aria-label="Integrated terminal">
+            <div class="panel-tabs">
+              <button class="active" type="button">Terminal</button>
+              <button type="button">Problems</button>
+              <button type="button">Output</button>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">PS C:\portfolio\manuel&gt;</span> npm run introduce</p>
+              <p class="terminal-line">Backend/cloud engineer | AWS, Azure, Kubernetes | 5+ years experience.</p>
+              <p><span class="prompt">PS C:\portfolio\manuel&gt;</span> open contact.http</p>
+              <p class="terminal-line">manuel.oshana@gmail.com | linkedin.com/in/manueloshana | Toronto, ON</p>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <footer class="status-bar" aria-label="Status bar">
+        <span class="status-primary">main</span>
+        <span>Portfolio Ready</span>
+        <span>0 Problems</span>
+        <span>AWS / TypeScript</span>
+        <span>UTF-8</span>
+        <span>Ln 1, Col 1</span>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
